@@ -1,9 +1,11 @@
 import React from 'react'
-
-export default function Dashboard(props) {
+import Sidebar from './Sidebar'
+import {Container} from 'react-bootstrap'
+export default function Dashboard({id}) {
     return (
-        <div>
-            This is dashboard : {props.id}
-        </div>
+        <div className="d-flex" style={{height:'100vh'}}>
+            <Sidebar id={id}/>
+            This is a Dashboard
+        </div   >
     )
 }
