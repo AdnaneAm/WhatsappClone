@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ConvModal() {
+export default function ConvModal({closeModal}) {
     return (
         <div>
             Conversations Modal
